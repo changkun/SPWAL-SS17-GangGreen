@@ -13,39 +13,39 @@
 
 % Author
 \author{Anita Baier}
-\affiliation{\institution{Ludwigs-Maximilian-Universit\"at}
-  \city{Munich} \country{Germany}}
-\email{anita.baier@gmx.de} 
+%\affiliation{\institution{Ludwigs-Maximilian-Universit\"at}
+%  \city{Munich} \country{Germany}}
+%\email{anita.baier@gmx.de} 
 
 \author{Zhe Li}
-\affiliation{\institution{Ludwigs-Maximilian-Universit\"at}
-  \city{Munich} \country{Germany}}
-\email{li.zhe@campus.lmu.de} 
+%\affiliation{\institution{Ludwigs-Maximilian-Universit\"at}
+%  \city{Munich} \country{Germany}}
+%\email{li.zhe@campus.lmu.de} 
 
 \author{Jonas Mattes}
-\affiliation{\institution{Ludwigs-Maximilian-Universit\"at}
-  \city{Munich} \country{Germany}}
-\email{j.mattes@campus.lmu.de} 
+%\affiliation{\institution{Ludwigs-Maximilian-Universit\"at}
+%  \city{Munich} \country{Germany}}
+%\email{j.mattes@campus.lmu.de} 
 
 \author{Bruno M\"uller}
-\affiliation{\institution{Ludwigs-Maximilian-Universit\"at}
-  \city{Munich} \country{Germany}}
-\email{muellerbr@cip.ifi.lmu.de} 
+%\affiliation{\institution{Ludwigs-Maximilian-Universit\"at}
+%  \city{Munich} \country{Germany}}
+%\email{muellerbr@cip.ifi.lmu.de} 
 
 \author{An Tien Go}
-\affiliation{\institution{Ludwigs-Maximilian-Universit\"at}
-  \city{Munich} \country{Germany}}
-\email{antiengo@campus.lmu.de}
+%\affiliation{\institution{Ludwigs-Maximilian-Universit\"at}
+%  \city{Munich} \country{Germany}}
+%\email{antiengo@campus.lmu.de}
 
 \author{Changkum Ou}
-\affiliation{\institution{Ludwigs-Maximilian-Universit\"at}
-  \city{Munich} \country{Germany}}
-\email{hi@changkun.us} 
+%\affiliation{\institution{Ludwigs-Maximilian-Universit\"at}
+%  \city{Munich} \country{Germany}}
+%\email{hi@changkun.us} 
 
 \author{Guoliang Xue}
-\affiliation{\institution{Ludwigs-Maximilian-Universit\"at}
-  \city{Munich} \country{Germany}}
-\email{guoliang.xue@campus.lmu.de} 
+%\affiliation{\institution{Ludwigs-Maximilian-Universit\"at}
+%  \city{Munich} \country{Germany}}
+%\email{guoliang.xue@campus.lmu.de} 
 
 
 \ccsdesc[500]{Hardware~Power and energy}
@@ -63,6 +63,7 @@
   Our goal is to find a solution to this pollution problem. Our plan is to create a trading system similar 
   to the CO2 trading system of the European Union. Countries are allowed to only export a certain amount of e-waste. 
   This amount can be increased if they either buy allowances from other countries or if they invest in recycling of e-waste. 
+  Meanwhile, we leverage a mathematical model to prove our system's rationality.
   The global e-waste export limits will be lowered year by year, thus lowering global pollution created by no longer
   used electronics.  
   
@@ -100,39 +101,33 @@
 %\end{figure}
 
 
-\section{Introduction}
-E-waste is a growing problem, especially in industrialized countries. One of the applicated solutions
-is to ship this e-waste to third world countries. However, this cannot be the longterm solution. As such
-we propose an e-waste allowance system. With this, only a limited amount of e-waste can be shipped outside, 
-which will be reduced yearly.
+\section{Achievements}
 
-\section{Related Work}
+We collect and analyze related data. Several diagrams would be plotted to demonstrate what the current situation of E-waste in EU is, and which hazards it has brought into citizens’ daily life. More specifically, we could find out what the development tendency of E-waste is in respective country, and is there any difference in terms of volume of E-waste among countries. 
+So now we have a better understanding about the current situation of E-waste: keeping increasing E-waste, rigorous solutions(eg. ship e-waste to third world countries)\cite{Robinson2009}, ineffective solutions (eg. deposit for producer), recycling and reusing only not long-lasting lower e-waste\cite{kahhat2008exploring，BMUB}.
 
-TBA
 
-\section{Justification}
+\section{Next Step}
 
-Many solution to the e-waste problems are extreme (as seen in the related work section). However, it is important
-for a successful transfer from old plans to efficient e-waste plans to make small adjustments first. 
-For this reason, we introduce an e-waste allowance. This will force countries to slowly but surely reduce their e-waste production.
+\subsection{More Researches about Measurement}
 
-\section{Evaluation}
+We have done some researches about how the existing methods \cite{DUH，NABU} contend with E-waste problem, and find out whether they have any flaws that we can avoid in my project, or could we put forward a new way to solve those issues. Just as the proposal describes, CO2 trading system will be an appropriate analogy to our system. We should leverage the \" cap and trade \" principle to solve the reasonable distribution of E-waste. In the next step, we accentuate the task how to measure the E-waste and what is the quality criteria.
 
-In order to check the vadility of this approach, we will introduce this system first for specific device. 
-For example, only TVs should be limited in exporting. With the results of the testing phase, we will 
-re-evaluate our system.
+\subsection{System Design}
 
-\section{Research Plan}
+To provide a better prerequisite for mathematical model, a robust system design is necessary. We could use more scientific and efficient way \cite{shah2015overview} to manage system. Additionally, from the regulation aspect, Plambeck and Wang \cite{plambeck2009effects} investigates the influence of how e-waste regulation types and market structure affects related four aspects of new production introduction: the quantify of e-waste, manufacturers’ profits, consumer surplus and social welfare. So we also need to integrate those four aspects to our system.
 
-Our system will be similar to the C02 system of the EU. As such, we will analyze the C02 plan and re-adjust 
-it to our needs. For this, these important aspects have to be considered: the measurement of e-waste, 
-the distribution of e-waste-shipping-certificates (similar to the C02-certificates) and how many certificates 
-should be available. 
-In the first progress report, we will present a draft-system for this. In the mid term syncrhonisation we expect
-to have the system more fleshed out. In the second report we expect to have the system completely worked out.
-In the final stage, we will expand our research question in other ways. For example, with our proposed idea no clear
-progress can be measured (when considering everything), as only returned e-waste is monitored. One solution to this would
-be to research how e-waste could be tracked. 
+\subsection{Mathematical Proof}
+
+Since many solution to the e-waste problems are extreme, it is important for a successful transfer from old plans to efficient e-waste plans to make small adjustments first. 
+For this reason, we introduce an e-waste allowance\cite{watanabe2005european}. This will force countries to slowly but surely reduce their e-waste production. Therefore, we try to build a mathematical model \cite{global-perspective}, which could efficiently solve the allocation of E-waste all around countries in EU. Optimized resource allocation algorithm will play a important role to implement this model.  After that we try to prove its rationality. This part is the most crucial part.
+
+Here we introduce a new concept \" certificate \" as an impact factor. we could impose the restriction on the distribution of e-waste-shipping by certificate, at the same time,  the number of available certificates for each country is supposed to consider as well.
+
+\subsection{Additional Aspects}
+
+In the following, it is necessary to mention what the risks our model is going to face and present our limitations of our project. Never to ignore is to analyze the reasons behind those risks.
+In the last section a conclusion and future work on our topic will be provided.
 
 \bibliography{bib}
 \bibliographystyle{bibformat}
