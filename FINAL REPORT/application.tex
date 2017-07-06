@@ -1,12 +1,13 @@
 \section{Applications}
 
-\subsection{Here is your stuff.}
+\subsection{Tax and Prevention Mechanism}
 
 A mature electrical product could consists of thousand small parts. In order to better 
 calculate the e-waste tax for each product, we should primarily order all the materials 
-in the ingredient list to a vital factor to decide how much e-waste they could generate, 
-we should set a  staircase-like structure to distinguish different tax rate. 
-The tax rate could range from $5\%$ to $35\%$ in $5$ grades. 
+in the ingredient list as a vital factor to decide how much e-waste they could generate. 
+We set a staircase-like structure to distinguish different tax rate, and it could range from $5\%$ to $35\%$ in $5$ grades.
+Moreover, the degree of contamination to environment for each individual product is also estimated to get a flexible tax rate, 
+which means more contamination-prone materials inside a product, the higher tax rate this hierarchy holds.
 
 \begin{center}
 \begin{table}
@@ -21,10 +22,13 @@ The tax rate could range from $5\%$ to $35\%$ in $5$ grades.
 	5		& part exceed 8000 ton & 35 \\
 	\bottomrule
 \end{tabular}
-\caption{Table to test captions and labels}
+\caption{Template table to tax hierarchy}
 \label{table:1}
 \end{table}
 \end{center}
+
+By means of above table, if the industries want to produce more products in which the material could damage to the environment, we have an instruction 
+to decide how much they have to pay more. 
 
 The more important thing is how can we prevent the industry to lie about the ingredient list. 
 We put forward an incentive mechanism. The cost of execution of ingredient analysis and the penalty 
@@ -33,22 +37,22 @@ of avoiding regulation under government. We leverage the Game Theory for the ind
 The Government takes responsibility to protect the resource and environment, 
 which on the on the one hand could be understood that if the industries do not want to 
 execute the publishing of ingredient list, it leads to the contamination, 
-so that the government has to take the remedial measurement, let us assume that this cost is R, 
+so that the government has to take the remedial measurement, let us assume that this cost is $R$, 
 at the same time it takes the government regulation cost $C$ to penalize the
 industries with cost $F$ that the industries have to pay for the government. 
 In order to let each Industry execute the list consciously, $F-C >0$; On the other hand, 
 when the Industries are willing to execute the ingredient list, it brings the healthy to 
 the public back, so that the welfare $W$ comes sequentially.
 
-Suppose the selling price of normal electronics is Pn, the electronics with ingredient list is $P_{il}$. 
-The cost of normal electronics in $C_n$, and the electronics with ingredient list is Cil. 
+Suppose the selling price of normal electronics is $P_n$, the electronics with ingredient list is $P_{il}$. 
+The cost of normal electronics in $C_n$, and the electronics with ingredient list is $C_{il}$. 
 The profit for each execution of ingredient list should be $R_{il} = (P_{il}-C_{il})$, inversely, 
 the profit is $R_n = (P_n-C_n)$. Since we have the regulation cost, 
 so the government take the regulation at the α probability, so it occurs at $(1-\alpha)$, 
 when the government will not do anything. On the other hand, for the industry itself, 
 it holds $\beta$ probability to decide execute the ingredient list.
 
-So we get the game matrix table
+So we get following game matrix table
 
 \begin{center}
 \begin{table}[!htbp]
@@ -58,13 +62,13 @@ So we get the game matrix table
 \end{table}
 \end{center}
 
-the variables we have defined, we could get the Expectation value of government:
+Leveraging all variables we have defined, we could get the Expectation value of government:
 
 \[
 E_{il} = \alpha\beta(W-C) + \alpha(1-\beta)(F-C-R) + (1-\alpha)\beta W + (1-\alpha)(1-\beta)R
 \]
 
-Analogously, the Expection value of Industry:
+Analogously, the Expectation value of Industry:
 
 \[
 E_c = \alpha\beta R_{il} + \alpha(1-\beta)(R_n-F) + (1-\alpha)\beta R_{il} + (1-\alpha)(1-\beta)R_n
@@ -94,7 +98,7 @@ and then we get optimal response functions for each entities (Government and Ind
 \end{equation}
 
 
-The intersection of two functions is the mixed Nash equilibrium in the government regulation 
+The intersection of two response functions is the mixed Nash equilibrium of the government regulation 
 during the execution of Ingredient List. Finally we get the unique deterministic solution, that is 
 
 \[
@@ -104,7 +108,7 @@ during the execution of Ingredient List. Finally we get the unique deterministic
 \beta^* =  \frac{F - C}{F}
 \]
 
-which means the Government is intended to regulation the Industries at the probability of $\alpha^*$, 
+Which means the Government is intended to regulation the Industries at the probability of $\alpha^*$, 
 and the Industry execute Ingredient List at the probability of $\beta^*$, none of them should not 
 change this balance state unilaterally, otherwise one of their profits could be damaged.
  
